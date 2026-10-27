@@ -1,0 +1,7 @@
+{
+  "uuid": "simpledesknote@lucas.local",
+  "name": "SimpleDeskNote",
+  "description": "Sticky notes on the desktop with live markup, checkboxes and per-monitor positions.",
+  "shell-version": ["51"],
+  "version": 2
+}

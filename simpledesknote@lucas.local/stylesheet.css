@@ -1,0 +1,136 @@
+.sdn-note {
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+  color: #2b2b2b;
+}
+
+.sdn-yellow { background-color: #fff3a3; }
+.sdn-pink   { background-color: #ffc4dc; }
+.sdn-green  { background-color: #c8f2c2; }
+.sdn-blue   { background-color: #c4e2ff; }
+.sdn-purple { background-color: #e2d1ff; }
+
+.sdn-header {
+  spacing: 4px;
+  padding: 4px 6px;
+  border-radius: 6px 6px 0 0;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.sdn-button {
+  padding: 3px;
+  border-radius: 99px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.sdn-button:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+  color: #000;
+}
+
+.sdn-button StIcon {
+  icon-size: 14px;
+}
+
+.sdn-confirm {
+  background-color: #d33;
+  color: #fff;
+  padding: 2px 8px;
+  font-size: 9pt;
+  font-weight: bold;
+}
+
+.sdn-confirm:hover {
+  background-color: #b11;
+  color: #fff;
+}
+
+.sdn-entry,
+.sdn-entry:focus,
+.sdn-entry:hover {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: #2b2b2b;
+  caret-color: #2b2b2b;
+  selection-background-color: rgba(0, 0, 0, 0.25);
+  selected-color: #000;
+  padding: 8px 10px 10px 10px;
+  font-size: 11pt;
+}
+
+.sdn-entry StLabel.hint-text {
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.sdn-dot {
+  width: 14px;
+  height: 14px;
+  margin: 3px;
+  border-radius: 99px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.sdn-dot:hover {
+  border: 2px solid rgba(0, 0, 0, 0.6);
+}
+
+.sdn-grip {
+  padding: 0 4px 2px 0;
+  font-size: 10pt;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sdn-grip:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.sdn-title,
+.sdn-title:focus,
+.sdn-title:hover {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: #1a1a1a;
+  caret-color: #1a1a1a;
+  selection-background-color: rgba(0, 0, 0, 0.25);
+  selected-color: #000;
+  padding: 0 4px;
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+.sdn-title StLabel.hint-text {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+.sdn-footer {
+  padding: 0 0 0 6px;
+}
+
+.sdn-toolbar {
+  spacing: 1px;
+  padding-bottom: 3px;
+}
+
+.sdn-tool {
+  min-width: 20px;
+  padding: 1px 3px;
+  border-radius: 4px;
+  font-size: 9.5pt;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.sdn-tool:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.sdn-tooltip {
+  background-color: rgba(30, 30, 30, 0.92);
+  color: #fff;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 9pt;
+}
