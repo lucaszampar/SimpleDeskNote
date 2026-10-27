@@ -2,6 +2,9 @@
   "uuid": "simpledesknote@lucas.local",
   "name": "SimpleDeskNote",
   "description": "Sticky notes on the desktop with live markup, checkboxes and per-monitor positions.",
-  "shell-version": ["51"],
+  "shell-version": [
+    "51"
+  ],
+  "url": "https://github.com/lucaszampar/SimpleDeskNote",
   "version": 2
 }

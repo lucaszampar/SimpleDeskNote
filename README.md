@@ -87,7 +87,7 @@ Requires **GNOME Shell 51**.
 ### From a release
 
 1. Download `simpledesknote@lucas.local.shell-extension.zip` from the
-   Releases page.
+   [Releases page](https://github.com/lucaszampar/SimpleDeskNote/releases).
 2. Install it:
 
    ```bash
@@ -103,7 +103,7 @@ Requires **GNOME Shell 51**.
 ### From source
 
 ```bash
-git clone <this repository>
+git clone https://github.com/lucaszampar/SimpleDeskNote.git
 cd SimpleDeskNote
 make install
 ```
