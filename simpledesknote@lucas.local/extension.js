@@ -426,6 +426,8 @@ const Note = GObject.registerClass({
         });
 
         this.connect('destroy', () => {
+            // Children emit focus/attribute signals while being torn down
+            this._destroyed = true;
             this._dismissGrab();
             this._clearConfirmTimeout();
             if (this._normalizeId) {
@@ -533,6 +535,8 @@ const Note = GObject.registerClass({
     // When focus moves between them, "out" arrives before "in". A drag or
     // resize grab also takes the focus away for a moment; ignore that.
     _syncToolbar() {
+        if (this._destroyed)
+            return;
         if (this._toolbarId)
             return;
         this._toolbarId = GLib.idle_add(GLib.PRIORITY_DEFAULT, () => {
@@ -546,6 +550,8 @@ const Note = GObject.registerClass({
     }
 
     _ensureCursorVisible() {
+        if (this._destroyed)
+            return;
         const clutterText = this._entry.clutter_text;
         if (!clutterText.has_key_focus())
             return;
@@ -602,6 +608,8 @@ const Note = GObject.registerClass({
     }
 
     _applyAttributes() {
+        if (this._destroyed)
+            return;
         const clutterText = this._entry.clutter_text;
         const text = this.text;
         const offsets = byteOffsets(text);
@@ -681,6 +689,8 @@ const Note = GObject.registerClass({
     }
 
     _queueApplyAttributes() {
+        if (this._destroyed)
+            return;
         if (this._applyId)
             return;
         this._applyId = GLib.idle_add(GLib.PRIORITY_DEFAULT, () => {
